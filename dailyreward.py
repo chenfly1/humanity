@@ -15,7 +15,7 @@ HEADERS = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
 }
 
-def load_tokens_from_file(file_path="D:/公司/Git/yeyou_test/humanity/ck.json"):
+def load_tokens_from_file(file_path="ck.json"):
     """从 JSON 文件中加载多个 token"""
     try:
         with open(file_path, "r", encoding="utf-8") as file:
