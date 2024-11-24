@@ -3,7 +3,7 @@ name: Daily Rewards Workflow
 on:
   schedule:
     # 设置定时任务为每天12:30 UTC（相当于北京时间 8:30 PM）
-    - cron: '30 12 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:  # 允许手动触发
 
 jobs:
