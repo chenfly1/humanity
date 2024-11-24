@@ -1,0 +1,45 @@
+name: Daily Rewards Workflow
+
+on:
+  schedule:
+    # 设置定时任务为每天12:30 UTC（相当于北京时间 8:30 PM）
+    - cron: '30 12 * * *'
+
+jobs:
+  daily-reward:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run dailyreward.py
+        run: python dailyreward.py
+
+  refer-reward:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run refferreward.py
+        run: python refferreward.py
