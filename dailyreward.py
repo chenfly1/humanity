@@ -35,15 +35,11 @@ def get_window_label(index):
     """根据索引返回窗口标识"""
     if index == 0:
         return "主号窗口"
-    if index == 12:
-        return "第 13 个窗口"
-    if index == 13:
-        return "第 14 个窗口"
     else:
         return f"第 {index} 个窗口"
 
 def claim_daily_rewards(token, window_label):
-    """发送签到请求并获取交易哈希"""
+    """发送签到请求"""
     HEADERS["token"] = token
     try:
         logging.info(f"[{window_label}] 正在为 token 发送签到请求...")
@@ -67,11 +63,12 @@ if __name__ == "__main__":
     tokens = load_tokens_from_file()
     if tokens:
         for i, token in enumerate(tokens):
-            # 计算窗口编号
-            if i == 0:
-                window_label = "主号窗口"
+            # 跳过第 12 个窗口（即第 12 个 token），并将第 12 个 token 视为第 13 个窗口
+            if i == 11:  # 第 12 个 Token（从 0 开始计数，索引为 11）
+                logging.info(f"⚠️ 跳过第 12 个窗口 (Token: {token})")
+                window_label = "第 13 个窗口"  # 把第 12 个 token 视为第 13 个窗口
             else:
-                window_label = get_window_label((i - 1) % 3 + 1)  # 循环分配窗口编号
+                window_label = get_window_label((i) % 3 + 1)  # 其他 Token 循环分配窗口编号
             claim_daily_rewards(token, window_label)
     else:
         logging.error("未加载到有效的 tokens，无法执行签到。")
