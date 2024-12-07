@@ -9,7 +9,7 @@ headers = {
     "accept-language": "zh-CN,zh;q=0.9",
     "authorization": "",
     "content-length": "0",
-    "cookie": "AjBOmW2JBjgDyPz35D7/YciYN7KErx60xzerWuXAHOvIvRWOghrnXa7NEzmOHtMqH9T3ZEC/Pb6sg72CHVIgMYJ6WLbRq9xPkv4BXWeiRA+QTBtiqzAFhuEcdpY224ewXc47roBiDRh8rljollB5VDL5BfZeRcrLtawwF0PGTbPetvCVMgA3w6do3d2VAiTq3Czd10Pj7yr2WAfk4kUf0lfbupmNkUnevNh6vlmp9Y8swK3x/QyB8nye/DkVTdvC",
+    "cookie": "QueueITAccepted-SDFrts345E-V3_humanityprotocol=EventId%3Dhumanityprotocol%26QueueId%3D44b20842-13d0-4be8-a1b8-bd14b4baf4f4%26RedirectType%3Dqueue%26IssueTime%3D1731857430%26Hash%3Dbbec3c989fca03aab9bece8b6b144742ad6498e95ccba2fb17c94b81b2f4b511",
     "origin": "https://testnet.humanity.org",
     "priority": "u=1, i",
     "referer": "https://testnet.humanity.org/dashboard",
@@ -19,7 +19,7 @@ headers = {
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-origin",
-    "token": "AjBOmW2JBjgDyPz35D7/YciYN7KErx60xzerWuXAHOvIvRWOghrnXa7NEzmOHtMqQfJA0hczuvlndyR7R41QQtTxENuZcp8pMFZ6AlW+rZcJE6XO+RfQVNjs6QDCdAq4bOPUQLVOJMGn4Bk2ZykBqU7i5ZU8Hvi37cBIhAso8pjdhZTTp7BuDA6zZmjK35VHpYAltZh3wEGlk5Ixp8QxbBCqJpUBObixd1wmueeF4si/6KchqVSt/pP600QdacU8",
+    "token": "AjBOmW2JBjgDyPz35D7/YciYN7KErx60xzerWuXAHOvIvRWOghrnXa7NEzmOHtMqH9T3ZEC/Pb6sg72CHVIgMYJ6WLbRq9xPkv4BXWeiRA+QTBtiqzAFhuEcdpY224ewXc47roBiDRh8rljollB5VDL5BfZeRcrLtawwF0PGTbPetvCVMgA3w6do3d2VAiTq3Czd10Pj7yr2WAfk4kUf0lfbupmNkUnevNh6vlmp9Y8swK3x/QyB8nye/DkVTdvC",
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
 }
 
